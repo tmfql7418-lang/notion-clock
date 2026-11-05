@@ -73,3 +73,11 @@ body {
 }
 .label.left  { left: 8%; }
 .label.right { right: 8%; }
+
+/* 숫자가 바뀔 때 위에서 아래로 내려오는 효과 */
+.num.flip { animation: dropIn 0.5s cubic-bezier(0.22, 1, 0.36, 1); }
+
+@keyframes dropIn {
+  from { transform: translateY(-70%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
